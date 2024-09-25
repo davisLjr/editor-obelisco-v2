@@ -1,9 +1,11 @@
+import Link from "next/link";
 import {CodeEditor} from "../src/components/codepen";
 
 export default function Editor() {
   return (
     <>
       <article>
+        <h1 className="visually-hidden">Editor de obelisco v2</h1>
         <div className="container">          
           <CodeEditor />
           <div className="pagination">
@@ -15,10 +17,10 @@ export default function Editor() {
                 </a>
               </div> 
               <div className="page-item disabled">
-                <a className="btn page-link disabled" tabIndex={-1} href="/editor">
+                <Link className="btn page-link disabled" tabIndex={-1} href="/editor">
                   <span className="page-next-text">Editor</span>
                   <span className="page-next-icon" aria-hidden="true"></span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

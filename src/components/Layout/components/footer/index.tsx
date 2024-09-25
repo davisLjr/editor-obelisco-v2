@@ -28,7 +28,7 @@ export const Footer = () => {
                   alt="Logo de Vamos Buenos Aires"
                 />
               </div>
-              <div className="col-12">
+              {/* <div className="col-12">
                 <ul className="list-inline">
                   <li className="list-inline-item">
                     <a href="https://boletinoficial.buenosaires.gob.ar">
@@ -56,13 +56,12 @@ export const Footer = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </section>
           <section>
             <div className="footer-license-text">
-              Los contenidos de buenosaires.gob.ar están licenciados bajo
-              Creative Commons Reconocimiento 2.5 Argentina License.
+              Los contenidos de esta web, son de codigo libre y desarrollados por practicas.
             </div>
           </section>
         </div>

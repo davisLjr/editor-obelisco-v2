@@ -49,7 +49,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="d-none d-lg-flex col-lg-5 justify-content-end">
-          <iframe src={iframeSrc} width={450} height={350}></iframe>
+          <iframe src={iframeSrc} width={450} height={350} title="imagen ilustrativa para la web. solo decorativa." ></iframe>
         </div>
       </div>
     </>
