@@ -1,0 +1,101 @@
+.mainEditor {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  
+  @media (max-width: 1200px){
+    flex-wrap: wrap;
+  }
+  
+  .codeEditorWrapper {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    outline: none;
+    margin-bottom: 1rem;
+    min-width: 500px;
+  
+    .preStyle {
+      height: 100%;
+      pre {
+        color: white !important;
+      }
+    }
+    /* Personalización de la barra de desplazamiento */
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: #f5f5f5;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  }
+  
+  .mainResult {
+    width: 100%;
+    .result {
+      border: 3px solid #101e37;
+      background: white;
+      padding: 0rem;
+      height: 100%;
+      overflow-y: scroll;
+  
+      &.expanded {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        border-radius: 0;
+        padding: 4rem 2rem;
+        box-shadow: none;
+        margin-top: 0;
+        background: white;
+        max-height: 100%;
+  
+        .shut {
+          margin-top: -40px;
+          margin-bottom: 25px;
+          display: flex;
+        }
+      }
+  
+      .shut {
+        display: none;
+      }
+  
+      /* Personalización de la barra de desplazamiento */
+      &::-webkit-scrollbar {
+        width: 8px;
+        background-color: #f5f5f5;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+      }
+  
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
+  .main-editor {
+    width: 100%;
+    flex-direction: column;
+  }
+
+}
+
+.h-32 {
+  max-height: 32px;
+}

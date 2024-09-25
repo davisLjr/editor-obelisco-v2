@@ -1,0 +1,29 @@
+@import "@gcba/obelisco-v2/dist/styles.css";
+// SECCION ABOUT
+
+.about-panels {
+  margin-bottom: 80px;
+}
+
+.about-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .panel-horizontal-content {
+    background: none;
+
+    .card-body {
+      color: white;
+    }
+  }
+}
+
+.page-item.disabled {
+  &:focus{
+    background: none;
+  }
+  &:active {
+    background: none !important;
+  }
+}
