@@ -5,4 +5,7 @@ module.exports = {
     config.resolve.alias['@templates'] = path.join(__dirname, './src/templates');
     return config;
   },
+  images: {
+    unoptimized: true,
+  },
 };

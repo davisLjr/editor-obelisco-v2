@@ -14,7 +14,6 @@
     overflow-y: scroll;
     outline: none;
     margin-bottom: 1rem;
-    min-width: 500px;
   
     .preStyle {
       height: 100%;
@@ -41,7 +40,8 @@
   .mainResult {
     width: 100%;
     .result {
-      border: 3px solid #101e37;
+      border: 3px solid #336acc;
+      border-radius: 0.3rem;
       background: white;
       padding: 0rem;
       height: 100%;
